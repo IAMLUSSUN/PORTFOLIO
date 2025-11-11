@@ -1,0 +1,438 @@
+*{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+h1{
+    font-size: 65px;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    font-size: 55px;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace
+}
+h3{
+    margin:0;
+    font-family: 'Courier New', Courier, monospace
+}
+p{
+    font-size:23px;
+}
+nav h3{
+    font-size: 30px;
+    text-decoration: solid underline 3px white;
+}
+.PORTFOLIO{
+    transition: 0.5s all ease;
+}
+.PORTFOLIO:hover{
+    text-shadow: 0px 0px 20px white;
+}
+body{
+    margin:0;
+    background-image: url(Images/1854faaa-ed45-4a79-a0a4-42e6d3d70c76.jpg);
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: black;
+    top:100%;
+}
+header nav a h3{
+    color: white;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+header nav ul li a{
+    gap: 15px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box  ;
+    color: black;
+    display:block;
+    transition: all ease 0.3s;
+    font-weight: bold;
+}
+header nav ul li a:hover{
+    background-color: yellow;
+    transform: scale(1.2);
+}
+header nav ul li:last-child{
+    margin-right: 15px;
+}
+header div{
+    height: 40vh;
+    align-items: center;
+    text-align: center;
+    padding: 160px;
+}
+main div{
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 70vh;
+    border: 2px solid rgba(255, 255, 255, 0.463);
+    position: sticky;
+    top: 10vh;
+    border-radius: 30px 30px 0px 0px;
+    padding: 50px;
+}
+header div h1 span{
+    background-color: black;
+    padding: 5px;
+    padding-right: 3px;
+    border-radius: 5px; 
+    display:inline-block; 
+    transition: all ease 0.3s;
+    color: white;
+}
+header div h1 span:hover{
+    transform: scale(1.1);
+    color: yellow;
+}
+#AboutMe{
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 80vh;
+    border: 2px solid rgba(255, 255, 255, 0.463);
+    position: sticky;
+    top: 10vh;
+    border-radius: 30px 30px 0px 0px;
+}
+#AboutMe section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#AboutMe section p{
+    line-height: 40px;
+}
+.MeriPhotu{
+    width:350px ;
+    border-radius: 50%;
+    border: 1px gold solid;
+    transition: 0.3S all ease;
+}
+@keyframes rott{
+    0%{
+        transform: rotatez(0); 
+    }
+    100%{
+        transform: rotatez(360deg);
+        scale: 1.2;
+    }
+}
+@keyframes rottz{
+    0%{
+        transform: rotatez(0); 
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+@keyframes rotty{
+    0%{
+        transform: rotatey(0); 
+    }
+    100%{
+        transform: rotatey(360deg);
+    }
+}
+@keyframes rottx{
+    0%{
+        transform: rotatex(0); 
+    }
+    100%{
+        transform: rotatex(360deg);
+    }
+}
+.MeriPhotu:hover{
+    animation: rott 1s ease-in-out forwards;
+    border: 5px gold solid;
+    box-shadow: 0px 0px 10px gold;
+}
+#Expertise{
+    top: 15vh;
+}
+#Expertise section.sec{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#Expertise section.sec section *{
+    padding: 10px;
+    text-align: center;
+}
+.sec section p{
+    font-size: 15px;
+    color: rgb(161, 159, 157);
+}
+.sec section{
+    width: 30%;
+    display: block;
+    justify-content: center;
+}
+.sec section img{
+    width: 200px;
+    height: 200px;
+    align-content: center;
+    margin:auto;
+    display: block;
+}
+#ruby:hover{
+    animation: rottz ease-in-out 0.5s;
+}
+#grap:hover{
+    animation: rottx ease-in-out 0.5s;
+}
+#illu:hover{
+    animation: rotty ease-in-out 0.5s;
+}
+#AdditionalSkills{
+    top: 20vh;
+    display: flex;
+}
+#AdditionalSkills img{
+    height: 100px;
+    border-radius: 1000px;
+    object-fit: cover;
+    padding: 10px;
+}
+#AdditionalSkills section{
+    margin-right: 40px;
+}
+#Projects{
+    top: 25vh;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+#Projects div{
+    display: flex;
+    height: 55vh;
+    justify-content: space-between;
+    margin: 0;
+}
+#Projects ul{
+        padding-right: 20px;
+}
+.list-it{
+    overflow-x: auto;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+.DISPLAY{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.DISPLAY *{
+    border: solid rgb(135, 129, 129);
+}
+#Projects div ul li{
+    padding: 15px;
+    border-radius: 10000px;
+
+}
+#Projects a{
+    font-size: 20px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    display: block;
+    background-color: rgb(58, 56, 56);
+    border-radius: 1000px;
+    transition: linear 0.2s;
+}
+#Projects a:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+.list-it{
+    width: 45%;
+}
+.DISPLAY {
+flex: 1;
+background-color: rgb(30, 30, 30);
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+color: white;
+}
+
+.default-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 22px;
+text-align: center;
+color: rgba(255, 255, 255, 0.7);
+border: 0px;
+}
+
+.DISPLAY img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: contain;
+opacity: 0;
+transition: opacity 0.4s ease;
+}
+
+.DISPLAY img.active {
+opacity: 1;
+}
+
+.DISPLAY img.active ~ .default-text {
+display: none;
+}
+#Experience{
+    top: 30vh;
+    height: 60vh;
+}
+main div h2, main div p{
+    margin: 0;
+    padding: 20px;
+}
+.Contact-Me{
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    width: 40%;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    margin-top:70px;
+}
+
+.Contact-Me section{
+    padding: 10px;
+}
+input{
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    width: 450px;
+    margin-top: 5px;
+}
+input::placeholder{
+    font-size: 14px;
+    color: rgb(158, 158, 158);
+}
+textarea{
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    width: 450px;
+    margin-top: 5px;
+    height: 100px;
+}
+textarea::placeholder{
+    font-size: 14px;
+    color: rgb(158, 158, 158);
+}
+.send-message{
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 1000px;
+    align-items: center;
+    text-align: center;
+}
+.send-message a{
+    transition: all ease 0.5s;
+}
+.send-message a:hover{
+    color: rgb(126, 124, 124);
+}
+.Contact-Me div a{
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 10px 20px black;
+    align-items: center;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    background-color: rgb(0, 0, 0,0.7);
+    right: 0px;
+    top: 50%;
+    padding: 10px;
+    margin-top: -50px;
+    border-radius: 20px 0 0 20px;
+    border-bottom: 2px white solid;
+    border-left: 2px white solid;
+    border-top: 2px white solid;
+    margin-right: -40px;
+    transition: all ease 0.5s;
+}
+.sidebar:hover{
+    margin-right: 0;
+}
+.sidebar a{
+    padding: 3px 3px;
+    font-size: 1.1rem;
+    transition: all ease 0.4s;
+}
+.sidebar img{
+    height: 1.2rem;
+    border-radius: 50px;
+}
+.sidebar a:hover{
+    transform: scale(1.4);
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+@keyframes fadered{
+    0%{
+        box-shadow: 0px 0px 0px rgba(49, 1, 1);
+    }
+    25%{
+        box-shadow: 0px 00px 10px rgba(49, 1, 1);
+    }
+    50%{
+        box-shadow: 00px 0px 10px 20px rgba(49, 1, 1);
+    }
+    75%{
+        box-shadow: 0px 0px 10px rgba(49, 1, 1);
+    }
+    100%{
+        box-shadow: 00px 00px 10px rgba(49, 1, 1);
+    }
+}
+#AdditionalSkills section img {
+    animation: fadered 1s ease infinite;
+    display: block;
+}

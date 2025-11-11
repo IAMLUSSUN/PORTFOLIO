@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>MERA PORTFOLIO</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="portfolio.html" class="PORTFOLIO"><h3>Portfolio</h3></a>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#AboutMe">About me</a></li>
+                <li><a href="#Expertise">Expertise</a></li>
+                <li><a href="#AdditionalSkills">Additional Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Experience">Experience</a></li>
+
+                <li><a href="#ContactMe">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1><span>Hello</span> There </h1>
+            <h2>Rahul here</h2>
+            <h3>A programmer and Web Developer.</h3>
+        </div>
+    </header>
+    <main>
+        <div id="AboutMe">
+            <h2>About Me</h2>
+            <section>
+                <p>I’m a passionate and enthusiastic web developer with strong reasoning abilities and a keen desire to learn and grow.<br>Always eager to explore new opportunities, I strive to push my limits, take on challenging projects, and turn complex problems into creative solutions.<br>I love the sense of accomplishment that comes from solving tough challenges—it keeps me motivated to keep improving every day.</p>
+                <a href="https://www.instagram.com/itz.lussun/?hl=en" target="_blank"><img src="Images/meri photu.jpeg" class="MeriPhotu"></a>
+            </section>
+        </div>
+        <div id="Expertise">
+            <h2>Expertise</h2>
+            <section class="sec">
+                <section style="border-right: 1px solid white; padding-right: 30px;">
+                    <img src="Images/graphql.png" id="grap">
+                    <h3>HTML/CSS</h3>
+                    <p>Strong command of HTML with excellent styling and layout skills in CSS.</p>
+                </section>
+                <section style="border-right: 1px solid white; padding-right: 30px;">
+                    <img src="Images/ruby-programming-language.png" id="ruby">
+                    <h3>JavaScript</h3>
+                    <p>Beginner: Familiar with core JavaScript concepts, DOM manipulation, and creating interactive web elements; actively learning modern JS features.</p>
+                </section>
+                <section>
+                    <img src="Images/3d-code-icon-symbols-of-programming-illustration-png.webp" id="illu">
+                    <h3>Others</h3>
+                    <p>Skilled in Python programming and working with databases using basic MySQL queries</p>
+                </section>
+            </section>
+        </div>
+        <div id="AdditionalSkills">
+            <section>
+                <img src="Images/Adobe_Illustrator_CC_icon.svg.png"style="margin-left: -20px;" >
+                <img src="Images/Adobe_Photoshop_CC_icon.svg.png"style="margin-left: 20px;  height:90px;">
+                <img src="Images/Adobe_Premiere_Pro_CC_icon.svg.png"style="margin-left: -20px; height:80px;"">
+                <img src="Images/images.png"style="margin-left: 20px; height:70px;"">
+            </section>
+            <section>
+                <h2>Additional Skills</h2>
+                <p>I have hands-on experience in photo editing with Adobe Photoshop and video editing using Wondershare Filmora and CapCut. I also possess a basic understanding of Adobe Illustrator, which helps me create clean and creative visual designs. These skills allow me to combine creativity with technical precision, enhancing the overall quality and presentation of my projects.</p>
+            </section>
+        </div>
+        <div id="Projects">
+            <div>
+                <section class="list-it">
+                    <ul>
+                    <li data-img="0"><a href="">IICS India Website</a></li>
+                    <li data-img="1"><a href="">Gold Gym India Website</a></li>
+                    <li data-img="2"><a href="">GOOGLE SEARCH ENGINE</a></li>
+                    <li data-img="3"><a href="">Calculator HTML/CSS JavaScript</a></li>
+                    <li data-img="4"><a href="">Amazon Website HTML/CSS</a></li>
+                    <li data-img="5"><a href="">Calculator (Python)</a></li>
+                    <li data-img="6"><a href="">Pattern Generator (Python)</a></li>
+                    <li data-img="7"><a href="">School DataBase (MySQL)</a></li>
+                    </ul>
+                </section>
+                <section class="DISPLAY">
+                    <article class="default-text">
+                        <h2>Projects</h2>
+                        <span style="font-size: 15px;color: rgb(161, 159, 157); border: 0px ;">Hover on the list.</span>
+                    </article>
+                    <img src="Images/iicsweb.png">
+                    <img src="Images/GymWeb.png">
+                    <img src="Images/Googleweb.png">
+                    <img src="Images/Calweb.png">
+                    <img src="Images/amazonweb.png">
+                </section>
+            </div>
+        </div>
+        <script>
+        const listItems = document.querySelectorAll('#Projects ul li');
+        const images = document.querySelectorAll('.DISPLAY img');
+
+        listItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+            images.forEach(img => img.classList.remove('active'));
+            const index = item.getAttribute('data-img');
+            if (images[index]) images[index].classList.add('active');
+            });
+
+            item.addEventListener('mouseleave', () => {
+            images.forEach(img => img.classList.remove('active'));
+            });
+        });
+        </script>
+        <div id="Experience">
+            <h2>Experience</h2>
+            <p>As an aspiring developer, I have been actively working on personal projects to apply and expand my technical skills. My experience includes creating responsive web pages, developing small-scale applications, and experimenting with UI/UX improvements. I continuously seek opportunities to learn new technologies and enhance my practical knowledge through hands-on practice.</p>
+        </div>
+    </main>
+    <footer class="Contact-Me" id="ContactMe">
+        <h2>Contact Me</h2>
+        <section>
+            <h3>Your Name</h3> <br>
+            <input type="text" placeholder="Enter Your Name">                 
+        </section>
+        <section>
+            <h3>Your Email</h3> <br>
+            <input type="email" placeholder="Enter Your Email">                
+        </section>
+        <section>
+            <h3>Your Message</h3> <br>
+            <textarea placeholder="Type your message here...."></textarea>
+        </section>
+        <br>
+        <div class="send-message">
+        <a href="#">Send Message</a>
+    </footer>
+    <div class="sidebar">
+        <a href="https://www.instagram.com/itz.lussun/?hl=en" target="_blank"><img src="Images/Instagram_logo_2022.svg.png"></a>
+        <a href="https://www.linkedin.com/in/rahul-sharma-760114354/" target="_blank"><img src="Images/174857.png"></a>
+        <a href="www.mega/344231je" target="_blank"><img src="Images/images (1).png"></a>
+    </div>
+        <br><br><br><br>
+    <div style="height: 1rem; background-color: black;"></div>
+</body>
+</html>
